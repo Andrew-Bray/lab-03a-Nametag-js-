@@ -1,0 +1,73 @@
+
+body {
+    background-color: rgb(200, 213, 174);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: colorswitch;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    
+}
+
+main {
+    background: red;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+}
+
+.hello {
+        font-size: 4em;
+        color: white; 
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.my-name-is {
+    font-size: 1.7em;
+        color: white;
+        justify-content: center;
+        line-height: 30px;
+}
+
+.name {
+    font-family: 'marck script', cursive;
+    background: white;
+    width: 300px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    
+    
+}
+
+.bottom {
+    height: 22px;
+}
+
+.color-buttons {
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+    justify-content: space-evenly;
+}
+
+
+@keyframes colorswitch {
+    0%   {background-color:rgb(200, 213, 174);}
+    20%  {background-color:yellow;}
+    40%  {background-color:blue;}
+    60%  {background-color:green;}
+    80% {background-color:red;}
+    100% {background-color:rgb(200, 213, 174);};
